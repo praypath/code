@@ -48,7 +48,11 @@ class Nowapi extends API_Controller
 	{
 		return false;
 	}
-
+	
+	/*
+	@method: POST
+	@endpoint: gettestuserdetails
+	*/
 	function gettestuserdetail_post()
 	{
 		$sessionId = md5(date("d:m:Y") . session_id() . date("H:i:s"));
@@ -126,7 +130,12 @@ class Nowapi extends API_Controller
 							], REST_Controller::HTTP_OK);
 
 	}
-
+	
+	/*
+	@method: POST
+	@endpoint: interestrate
+	@description: provides rate of interest applicable for individual
+	*/
 	function getinterestrate_post()
 	{
 		$sessionId = md5(date("d:m:Y") . session_id() . date("H:i:s"));
@@ -160,7 +169,11 @@ class Nowapi extends API_Controller
 							], REST_Controller::HTTP_OK);
 
 	}
-
+	
+	/*
+	@method: POST
+	@description: verify user idmatrix 
+	*/
 	function getcheckidmatrixresult_post()
 	{
 
@@ -179,7 +192,11 @@ class Nowapi extends API_Controller
 							], REST_Controller::HTTP_OK);
 
 	}
-
+	
+	/*
+	@method: POST
+	@description: get idmatrix score
+	*/
 	function getidmatrixscore_post()
 	{
 
